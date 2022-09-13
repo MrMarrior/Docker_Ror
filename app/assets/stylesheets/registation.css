@@ -1,0 +1,16 @@
+.wrapper-reg{
+  max-width:240px;
+  height: 200px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+}
+.wrapper-reg > div{
+  float: center;
+}
+.wrapper-reg > h2{
+  margin-left: 15px;
+}
+.wrapper-reg >  div> form{
+  margin-left: 20px;
+}

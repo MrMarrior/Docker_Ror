@@ -1,0 +1,9 @@
+<h1 class="title-lg"> Это статья под номером <%= @number_of_article %> </h1>
+<div class=container>
+<p> <%= @article.body %></p>
+<p><%= link_to "Назад к статьям", articles_path , class: 'button mt'%> </p>
+<p> <%= link_to "Отредактировать статью", edit_article_path(@article) , class: 'button mt'%> </p>
+<div class="">
+  <%= button_to "Удалить статью", article_path(@article), method: :delete, class: 'button mt' %>
+</div>
+</div>

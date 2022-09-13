@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+<div class="wrapper">
+  <header>
+    <div class="navbar">
+      <p> <%=link_to "Blog", root_path, class: "title-sm" %> </p>
+      <div>
+        <% if current_user.present? %>
+          <%= content_tag 'span', " @#{current_user.nickname}", class:"mt-lg" %>
+          <%= button_to 'Выйти', session_path, method: :delete , class:"button" %>
+        <% else %>
+          <%=link_to "Зарегистрироваться", new_user_path, class: "button" %>
+          <%=link_to "Войти", new_session_path, class: "button" %>
+        <% end %>
+      </div>
+    </div>
+  </header>
+
+    <% if flash[:notice].present? %>
+      <p class="mb mt container"><%= flash[:notice]  %></p>
+    <% elsif flash[:alert].present? %>
+      <p class="mb mt container"><%= flash[:alert]  %></p>
+      <% end %>
+
+      <%= yield %>
+</div>
+  </body>
+</html>

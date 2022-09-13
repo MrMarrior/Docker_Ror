@@ -1,0 +1,18 @@
+<div class="container wrapper-reg">
+  <h2 class="title-lg"> Регистрация </h2>
+
+  <div class="mt">
+    <%= form_with model: @user do |form| %>
+    <p> <%=form.label :name, "Ваше имя" %> </p>
+    <p> <%=form.text_field :name, class: "form-text-field" %> </p>
+
+    <p class=""> <%=form.label :nickname, "Имя профиля" %> </p>
+    <p> <%=form.text_field :nickname, class: "form-text-field" %> </p>
+
+    <p class=""> <%=form.label :email  %> </p>
+    <p> <%=form.text_field :email, class: "form-text-field" %> </p>
+
+    <p><%= form.submit 'Зарегистрироваться', class: 'button mt-sm'%> </p>
+    <% end %>
+  </div>
+</div>

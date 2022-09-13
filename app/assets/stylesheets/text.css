@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+.title-lg {
+  font-size: 175%;
+  font-family: Gill Sans Extrabold, sans-serif;
+  font-weight: bolder;
+}
+
+.title-md, .title{
+    font-size: 150%;
+}
+
+.title-sm{
+    font-size: 125%;
+}
+
+.text-sm{
+  font-size: 80%;
+}

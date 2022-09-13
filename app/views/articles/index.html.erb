@@ -1,0 +1,13 @@
+
+
+<h1 class="title-lg white">Главная страница</h1>
+<p class="mt">
+  <%= link_to "Создать статью", "/articles/new" , class: 'button' %>
+</p>
+<div class="container mt">
+  <% @articles.each do |article| %>
+    <li class="mt-sm" >
+      <%=link_to article.title, article_path(article.id) %>
+    </li>
+  <% end %>
+</div>
