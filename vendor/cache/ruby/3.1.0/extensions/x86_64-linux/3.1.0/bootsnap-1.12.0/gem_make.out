@@ -1,0 +1,15 @@
+current directory: /home/dmitry/DR2/vendor/cache/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+/home/dmitry/.rvm/rubies/ruby-3.1.2/bin/ruby -I /home/dmitry/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220915-139290-bh0pbo.rb extconf.rb
+creating Makefile
+
+current directory: /home/dmitry/DR2/vendor/cache/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /home/dmitry/DR2/vendor/cache/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/dmitry/DR2/vendor/cache/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20220915-139290-f7m6br/bootsnap
