@@ -12,6 +12,6 @@ RUN useradd -ms /bin/bash newuser
 RUN chown -R newuser .
 RUN chmod 777 /app
 RUN rake tmp:cache:clear
-RUN chmod 0664 /app/log/development.log
+#RUN chmod 0664 /app/log/development.log
 USER newuser
 #ENTRYPOINT ["./entrypoints/docker-entrypoint.sh"]
